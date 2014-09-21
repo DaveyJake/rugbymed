@@ -1,0 +1,103 @@
+/* 
+	MASTER STYLESHEET
+	Author: Davey Jacobson
+
+	1. Imports
+	2. Utilities
+	3. Fonts
+*/
+
+/* 1. Imports
+------------------------------------------ */
+/* global */
+@import "global/footer.less";
+@import "global/header.less";
+@import "global/page.less";
+@import "global/sidebar-menu.less";
+
+/* specific */
+@import "specific/home.less";
+@import "specific/mobile-menu.less";
+
+/* vendor */
+@import "vendor/font-awesome.less";
+@import "vendor/foundation.less";
+@import "vendor/reset.less";
+
+
+
+/* 2. Utilities
+------------------------------- */
+
+@rowWidth: 1030px;
+
+@red: #940016;
+@blue: #001830;
+@gray: #999;
+@darkGray: #222;
+
+@transblue: rgba(0, 24, 48, 0.5);
+@subtransblue: rgba(0, 24, 48, 0.85);
+
+
+/* 3. Fonts
+------------------------------- */
+
+@font-face {
+	font-family: "Monda";
+	src: url(../fonts/Monda-Regular.ttf), url(../font/Monda-Bold.ttf);
+}
+
+// names
+@fawesome: "FontAwesome";
+@jaf: "jaf-facitweb";
+@fjalla: "Fjalla One";
+@aldrich: "Aldrich";
+@monda: "Monda";
+
+
+// assignments
+nav {
+	&#site-navigation {
+		a {
+			font-family: @jaf;
+			font-weight: 400;
+			font-size: .95em;
+		}
+	}
+}
+h1 {
+	font-family: @jaf;
+	font-weight: 700;
+	font-size: 28px;
+	color: @blue;
+}
+h2 {
+	font-family: @jaf;
+	font-weight: 600;
+	font-size: 24px;
+	color: @blue;
+	padding: 4px 20px;
+	margin-bottom: 15px;
+	display: block;
+	text-transform: uppercase;
+	background: url('/usarmedsymposium/wp-content/themes/rugbymed/img/pattern-grey.gif');
+}
+h3 {
+	font-family: @jaf;
+	font-weight: 700;
+	font-size: 20px;
+	color: @blue;
+	padding: 4px 0;
+	display: block;
+	text-transform: uppercase;
+	margin: 15px 0 -5px;
+}
+p {
+	font-family: @jaf;
+	font-weight: 400;
+	font-size: 13px;
+}
+a {
+	color: @red;
+}

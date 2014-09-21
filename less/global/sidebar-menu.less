@@ -1,0 +1,33 @@
+/* SIDEBAR MENU STYLESHEET */
+#sidebar-wrapper {
+	min-height: 800px;
+	float: left;
+	padding-right: 0;
+	border-right: 1px solid rgba(0,0,0,.1);
+	position: absolute;
+	left: -320px;
+	#main-sidebar {
+		margin: 0;
+		padding-right: 0 !important;
+		border-right: 1px solid rgba(0,0,0,.1);
+		nav {
+			margin-top: 20px;
+			width: 100%;
+			.menu-item {
+				font-family: @fjalla;
+				text-transform: uppercase;
+				background: url('/usarmedsymposium/wp-content/themes/rugbymed/img/listBg.png') repeat;
+				background-position: top center;
+				a {
+					padding: 10px 20px;
+				}
+			}
+		}
+		&.active {
+			left: 0;
+			-moz-transform: 0 0 0.55rem;
+			-o-transform: 0 0 0.55rem;
+			-ms--transform: 0 0 0.55rem;
+		}
+	}
+}

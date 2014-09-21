@@ -1,0 +1,6 @@
+/* MOBILE MENU STYLESHEET */
+@media screen and (max-width: 640px) {
+  #sidebar-wrapper {
+    display: none;
+  }
+}

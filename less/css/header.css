@@ -1,0 +1,5 @@
+/* HEADER STYLESHEET */
+header .header-text {
+  position: absolute;
+  text-transform: uppercase;
+}
