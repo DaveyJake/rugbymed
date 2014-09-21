@@ -1,33 +1,45 @@
 /* SIDEBAR MENU STYLESHEET */
-#sidebar-wrapper {
-	min-height: 800px;
-	float: left;
-	padding-right: 0;
+
+nav {
+	margin: 0;
 	border-right: 1px solid rgba(0,0,0,.1);
-	position: absolute;
-	left: -320px;
-	#main-sidebar {
-		margin: 0;
-		padding-right: 0 !important;
+	width: 100%;
+	.mm-panel.mm-opened {
+		padding-left: 0 !important;
+	}
+	ul {
+		list-style: none;
+	}
+	.menu-item {
+		background: url('/usarmedsymposium/wp-content/themes/rugbymed/img/listBg.png') repeat;
+		background-position: bottom center;
+		font-family: @fjalla;
+		a {
+			text-transform: uppercase;
+		}
+	}
+}
+
+@media (min-width : 320px) and (max-width : 480px) {
+
+}
+
+/* RESPONSIVE MENU */
+@media (max-width : 1024px) {
+	#mobile-menu-button {
+		display: block;
+	}
+	#sidebar-wrapper {
+		display: none;
+	}
+}
+@media (min-width : 1025px) {
+	#mobile-menu-button {
+		display: none;
+	}
+	#sidebar-wrapper {
+		min-height: 800px;
+		float: left;
 		border-right: 1px solid rgba(0,0,0,.1);
-		nav {
-			margin-top: 20px;
-			width: 100%;
-			.menu-item {
-				font-family: @fjalla;
-				text-transform: uppercase;
-				background: url('/usarmedsymposium/wp-content/themes/rugbymed/img/listBg.png') repeat;
-				background-position: top center;
-				a {
-					padding: 10px 20px;
-				}
-			}
-		}
-		&.active {
-			left: 0;
-			-moz-transform: 0 0 0.55rem;
-			-o-transform: 0 0 0.55rem;
-			-ms--transform: 0 0 0.55rem;
-		}
 	}
 }

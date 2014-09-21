@@ -22,6 +22,7 @@
 /* vendor */
 @import "vendor/font-awesome.less";
 @import "vendor/foundation.less";
+@import "vendor/jquery.mmenu.all.less";
 @import "vendor/reset.less";
 
 
@@ -47,6 +48,14 @@
 	font-family: "Monda";
 	src: url(../fonts/Monda-Regular.ttf), url(../font/Monda-Bold.ttf);
 }
+@font-face {
+	font-family: "Fjalla One";
+	src: url(../fonts/FjallaOne-Regular.ttf);
+}
+@font-face {
+	font-family: "Aldrich";
+	src: url(../fonts/FjallaOne-Regular.ttf);
+}
 
 // names
 @fawesome: "FontAwesome";
@@ -58,24 +67,29 @@
 
 // assignments
 nav {
+	&#mobile-site-navigation {
+		a {
+			font-family: @fjalla;
+			font-weight: 400;
+			text-shadow: 1px 1px 0 #8E8E8E;
+			color: #fff;
+		}
+	}
 	&#site-navigation {
 		a {
 			font-family: @jaf;
 			font-weight: 400;
-			font-size: .95em;
 		}
 	}
 }
 h1 {
 	font-family: @jaf;
 	font-weight: 700;
-	font-size: 28px;
 	color: @blue;
 }
 h2 {
 	font-family: @jaf;
 	font-weight: 600;
-	font-size: 24px;
 	color: @blue;
 	padding: 4px 20px;
 	margin-bottom: 15px;
@@ -86,7 +100,6 @@ h2 {
 h3 {
 	font-family: @jaf;
 	font-weight: 700;
-	font-size: 20px;
 	color: @blue;
 	padding: 4px 0;
 	display: block;
@@ -96,7 +109,6 @@ h3 {
 p {
 	font-family: @jaf;
 	font-weight: 400;
-	font-size: 13px;
 }
 a {
 	color: @red;

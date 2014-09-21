@@ -65,26 +65,25 @@ include("widgets/featured-widget.php");
 
 include("inc/template-tags.php");
 
-// Require jquery --------------------------------------------------------------------------------------
+//Enqueue scripts and styles --------------------------------------------------------------------------------------------------------
 
+function rugbymed_scripts() {
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', false, '2.0.1' );
+	wp_enqueue_script( 'mmenu', get_template_directory_uri() . '/js/jquery.mmenu.min.js', all);
+	wp_enqueue_script( 'custom', get_template_directory_uri() . '/js/custom.js', all);
+	wp_enqueue_script( 'fastclick', get_template_directory_uri() . '/js/fastclick.js', all);
+}
+add_action( 'wp_enqueue_scripts', 'rugbymed_scripts' );
+
+// Require jquery --------------------------------------------------------------------------------------
+/*
 if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
 function my_jquery_enqueue() {
    wp_deregister_script('jquery');
    wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js", false, null);
    wp_enqueue_script('jquery');
-
-   // load a JS file from my theme: js/theme.js
-   wp_enqueue_script('custom', get_template_directory_uri() . '/js/main.min.js', array('jquery'), '1.0', true);
-
 }
-
-//Enqueue scripts and styles --------------------------------------------------------------------------------------------------------
-
-function rugbymed_scripts() {
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', false, '2.0.1' );
-}
-add_action( 'wp_enqueue_scripts', 'rugbymed_scripts' );
-
+*/
 
 //Add Image Sizes ---------------------------------------------------------------------------------------------------------------
 add_image_size( 'hero', 1030, 571, true );

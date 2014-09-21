@@ -12,24 +12,18 @@
 
 get_header(); ?>
 
-	<div id="primary" class="row content-area">
-		<section id="main" class="small-12 large-9 columns" role="main">
+	<div class="row content-area">
+		
+		<section class="home-content" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', 'page' ); ?>
+			
+			<?php endwhile; ?>
 
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
+		</section>
 
-			<?php endwhile; // end of the loop. ?>
+	</div>
 
-		</section><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

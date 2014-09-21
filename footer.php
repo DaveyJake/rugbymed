@@ -8,20 +8,30 @@
  */
 ?>
 
-		</div><!-- #content -->
+			</div>
 
-	</div><!-- .content-wrapper -->
+		</div>
 
-</div><!-- #main-wrapper -->
+	</div>
+	
+	<div id="footer-wrapper">
+		<footer id="footer" class="site-footer" role="contentinfo">
+			<center>
+				<div class="site-info">
+					<?php echo 'Website designed by <a href="http://usarugby.org">USA Rugby Football Union, Ltd.</a>'; ?>
+				</div>
+			</center>
+		</footer>
+		<?php wp_footer(); ?>
 
-<footer id="footer" class="site-footer" role="contentinfo">
-	<center>
-		<div class="site-info">
-			<?php echo 'Website designed by <a href="http://usarugby.org">USA Rugby Football Union, Ltd.</a>'; ?>
-		</div><!-- .site-info -->
-	</center>
-</footer><!-- #footer -->
-<?php wp_footer(); ?>
-
+	</div>
+	<script src="/usarmedsymposium/wp-content/themes/rugbymed/js/foundation.min.js"></script>
+	<script>
+		window.addEventListener('load', function() {
+    		new FastClick(document.body);
+		}, false);
+		$(document).foundation();
+	</script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
