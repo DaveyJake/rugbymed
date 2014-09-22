@@ -46,7 +46,7 @@ jQuery(document).ready(function($){
           // if larger or equal
           $('.mobile-menu').css('display','none');
           $('#main-wrapper').removeClass('mm-page');
-          $('#site-navigation').addClass('columns medium-3 large-3');
+          $('#site-navigation').addClass('columns medium-3 large-3').css('display','block');
           $('.content-wrapper').addClass('medium-9 large-9').removeClass('medium-12 large-12');
       } else {
           // if smaller
