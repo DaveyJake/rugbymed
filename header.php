@@ -71,6 +71,12 @@
 	</header>
 
 	<div id="main-content-wrapper" class="row">
+		
+		<nav id="site-navigation" class="columns large-3" role="navigation">
+		<?php if ( ! dynamic_sidebar( 'main-sidebar' ) ) : ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'main-sidebar', 'id' => 'site-menu' ) ); ?>
+		<?php endif; ?>
+		</nav><!-- #site-navigation -->
 
 		<div class="content-wrapper columns small-12 medium-9 large-9">
 

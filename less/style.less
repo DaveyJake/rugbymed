@@ -46,7 +46,7 @@
 
 @font-face {
 	font-family: "Monda";
-	src: url(../fonts/Monda-Regular.ttf), url(../font/Monda-Bold.ttf);
+	src: url(../fonts/Monda-Regular.ttf), url(../fonts/Monda-Bold.ttf);
 }
 @font-face {
 	font-family: "Fjalla One";
@@ -54,7 +54,7 @@
 }
 @font-face {
 	font-family: "Aldrich";
-	src: url(../fonts/FjallaOne-Regular.ttf);
+	src: url(../fonts/Aldrich-Regular.ttf);
 }
 
 // names
@@ -106,9 +106,27 @@ h3 {
 	text-transform: uppercase;
 	margin: 15px 0 -5px;
 }
+h4 {
+	font-family: @monda;
+	font-weight: 700;
+	color: @blue;
+}
+figcaption {
+	font-family: @jaf;
+	font-weight: 600;
+	font-size: 2em;
+	color: @blue;
+}
 p {
 	font-family: @jaf;
 	font-weight: 400;
+}
+ul {
+	color: @blue;
+}
+li {
+	font-family: @monda;
+	font-size: 1.2rem;
 }
 a {
 	color: @red;

@@ -22,10 +22,90 @@
 			color: #f00;
 		}
 	}
+	// agenda page
+	#agenda-imgs {
+		text-align: center;
+		max-width: 100%;
+		padding: 20px 0 0;
+		ul {
+			list-style: none;
+			display: block;
+			margin: 0;
+			li {
+				img {
+					max-width: 100%;
+				}
+			}
+		}
+	}
+	// sponsor page
+	.sponsor-img {
+		margin: 10px;
+		padding: 20px;
+	}
+	#sponsor-benefits {
+		list-style: none;
+		i {
+			margin-left: -2em;
+			padding-right: 1em;
+		}
+	}
+	// hall of fame
+	#post-17 {
+		.hof-inductee {
+			figure {
+				text-align: center;
+				max-width: 100%;
+				margin-bottom: -10px;
+			}
+			p {
+				font-size: 1.245rem !important;
+			}
+		}
+	}
+	// testimonials
+	#post-20 {
+		p {
+			font-family: @monda;
+			font-size: 1.25rem;
+			font-style: italic;
+		}
+	}
+}
+
+// red button
+.red-button {
+	margin-top: 10px;
+	border-color: #922F32;
+	background: #A80019;
+	padding: 8px 20px;
+	border-width: 1px;
+	border-style: solid;
+	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+	color: #FFF !important;
+	font-size: 12px;
+	margin-right: 5px;
+	display: inline-block;
+	margin-bottom: 10px;
+	&:hover {
+		border-color: #782628;
+		background: #B52D33;
+		-webkit-transition: background-color 0.2s linear;
+		-moz-transition: background-color 0.2s linear;
+		transition: background-color 0.2s linear;
+		margin-bottom: 10px;
+	}
 }
 
 @media (min-width : 320px) {
 	.entry-content {
 		font-size: 1rem;
+	}
+}
+
+@media (min-width : 641px) {
+	.entry-content {
+		font-size: 1.5rem;
 	}
 }

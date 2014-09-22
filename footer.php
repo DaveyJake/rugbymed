@@ -18,7 +18,7 @@
 		<footer id="footer" class="site-footer" role="contentinfo">
 			<center>
 				<div class="site-info">
-					<?php echo 'Website designed by <a href="http://usarugby.org">USA Rugby Football Union, Ltd.</a>'; ?>
+					<?php echo 'Website designed by <a href="http://usarugby.org">USA Rugby Football Union, Ltd.</a><br>Copyright <i class="fa fa-copyright"></i> 2014. All rights reserved.'; ?>
 				</div>
 			</center>
 		</footer>

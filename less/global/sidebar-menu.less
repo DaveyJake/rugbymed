@@ -25,7 +25,7 @@ nav {
 }
 
 /* RESPONSIVE MENU */
-@media (max-width : 1024px) {
+@media (max-width : 959px) {
 	#mobile-menu-button {
 		display: block;
 	}
@@ -33,13 +33,26 @@ nav {
 		display: none;
 	}
 }
-@media (min-width : 1025px) {
+@media (min-width : 960px) {
 	#mobile-menu-button {
 		display: none;
 	}
-	#sidebar-wrapper {
-		min-height: 800px;
+	#site-navigation {
+		min-height: 480px;
 		float: left;
 		border-right: 1px solid rgba(0,0,0,.1);
+		ul {
+			margin: 0;
+		}
+		li {
+			font-size: 2rem;
+			width: 249px;
+			a {
+				line-height: 40px;
+				padding: 5px 20px;
+				color: #fff;
+				text-shadow: 1px 1px 0 #8E8E8E;
+			}
+		}
 	}
 }

@@ -21,7 +21,6 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php edit_post_link( __( 'Edit', 'rugbymed' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-footer -->
+	<?php edit_post_link( __( 'Edit', 'rugbymed' ), '<span class="edit-link">', '</span>' ); ?>
+
 </article><!-- #post-## -->
