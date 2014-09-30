@@ -1,0 +1,65 @@
+/* 
+
+	EVENT STYLESHEET 
+
+*/
+
+.espresso_events {
+
+	header.entry-header {
+		box-shadow: none;
+	}
+	.entry-meta {
+		display: none;
+	}
+	.small-text {
+		font-size: 1.5rem;
+	}
+	.tckt-slctr-tkt-details-tbl {
+		.small-text {
+			font-size: 1.2rem;
+		}
+	}
+	section {
+		* {
+			font-size: 1.3rem;
+			line-height: 1.9rem;
+		}
+	}
+	.ee-event-datetimes-ul {
+		margin-left: 0;
+	}
+	.tkt-slctr-tbl {
+		thead th {
+			font-size: 1.75rem;
+			font-family: @aldrich;
+		}
+		tbody tr {
+			&:nth-child(3), &:nth-child(7), &:nth-child(11), &:nth-child(15) { 
+				background: #f8f8f8;
+			}
+		}
+	}
+	[class^='tckt-slctr-tbl-td'] {
+		b {
+			font-family: @jaf;
+			font-size: 1.5rem;
+		}
+		a {
+			font-family: @monda;
+			font-size: 1.5rem;
+		}
+	}
+	.tckt-slctr-tbl-td-price, .tckt-slctr-tbl-td-qty {
+		font-family: @monda;
+		font-size: 1.25rem;
+	}
+	.tckt-slctr-tkt-details-sctn {
+		p {
+			font-size: 1.25rem;
+		}
+	}
+	.tckt-slctr-tkt-details-tbl-wrap-dv .tckt-slctr-tkt-details-tbl {
+		border: 1px solid @blue;
+	}
+}

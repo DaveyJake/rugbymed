@@ -16,6 +16,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="/wp-content/themes/rugbymed/js/foundation.min.js"></script>
 
 <script src="//use.typekit.net/dob8irt.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
@@ -50,7 +51,7 @@
 							<span>Symposium</span>
 						</center>
 					</div>
-					<img src="/usarmedsymposium/wp-content/images/usar-shield-header.png" />
+					<img src="/wp-content/images/usar-shield-header.png" />
 					<div class="header-text bottom">
 						<center>
 							<span class="top-line">Monte Carlo</span><span class="dot">&nbsp;•&nbsp;</span><span class="second-line">Las Vegas</span><span class="dot">&nbsp;•&nbsp;</span><span class="third-line">Feb. 12-13</span>
@@ -59,15 +60,15 @@
 				</div>
 			</center>
 		</div>
-		<img class="headerBG" data-interchange="[/usarmedsymposium/wp-content/images/monte-carlo-vegas-320.jpg, (only screen and (min-width: 1px))],
-							   [/usarmedsymposium/wp-content/images/monte-carlo-vegas-480.jpg, (only screen and (min-width: 480px))],
-							   [/usarmedsymposium/wp-content/images/monte-carlo-vegas-640.jpg, (only screen and (min-width: 640px))],
-							   [/usarmedsymposium/wp-content/images/monte-carlo-vegas-768.jpg, (only screen and (min-width: 768px))],
-							   [/usarmedsymposium/wp-content/images/monte-carlo-vegas-1024.jpg, only screen and (min-width: 1024px))],
-							   [/usarmedsymposium/wp-content/images/monte-carlo-vegas-1280.jpg, (only screen and (min-width: 1280px))],
-							   [/usarmedsymposium/wp-content/images/monte-carlo-vegas-1440.jpg, (only screen and (min-width: 1440px))],
-							   [/usarmedsymposium/wp-content/images/monte-carlo-vegas-1600.jpg, (only screen and (min-width: 1600px))],
-							   [/usarmedsymposium/wp-content/images/monte-carlo-vegas-1920.jpg, (only screen and (min-width: 1920px))]">
+		<img class="headerBG" data-interchange="[/wp-content/images/monte-carlo-vegas-320.jpg, (only screen and (min-width: 1px))],
+							   [/wp-content/images/monte-carlo-vegas-480.jpg, (only screen and (min-width: 480px))],
+							   [/wp-content/images/monte-carlo-vegas-640.jpg, (only screen and (min-width: 640px))],
+							   [/wp-content/images/monte-carlo-vegas-768.jpg, (only screen and (min-width: 768px))],
+							   [/wp-content/images/monte-carlo-vegas-1024.jpg, only screen and (min-width: 1024px))],
+							   [/wp-content/images/monte-carlo-vegas-1280.jpg, (only screen and (min-width: 1280px))],
+							   [/wp-content/images/monte-carlo-vegas-1440.jpg, (only screen and (min-width: 1440px))],
+							   [/wp-content/images/monte-carlo-vegas-1600.jpg, (only screen and (min-width: 1600px))],
+							   [/wp-content/images/monte-carlo-vegas-1920.jpg, (only screen and (min-width: 1920px))]">
 	</header>
 
 	<div id="main-content-wrapper" class="row">

@@ -267,7 +267,7 @@ nav ul {
   list-style: none;
 }
 nav .menu-item {
-  background: url('/usarmedsymposium/wp-content/themes/rugbymed/img/listBg.png') repeat;
+  background: url('/wp-content/themes/rugbymed/img/listBg.png') repeat;
   background-position: bottom center;
   font-family: "Fjalla One";
 }
@@ -305,6 +305,9 @@ nav .menu-item a {
     color: #fff;
     text-shadow: 1px 1px 0 #8E8E8E;
   }
+  #site-navigation.fixed {
+    max-width: 249px !important;
+  }
 }
 /* specific */
 /* 
@@ -331,6 +334,59 @@ nav .menu-item a {
   }
 }
 /* vendor */
+/* 
+
+	EVENT STYLESHEET 
+
+*/
+.espresso_events header.entry-header {
+  box-shadow: none;
+}
+.espresso_events .entry-meta {
+  display: none;
+}
+.espresso_events .small-text {
+  font-size: 1.5rem;
+}
+.espresso_events .tckt-slctr-tkt-details-tbl .small-text {
+  font-size: 1.2rem;
+}
+.espresso_events section * {
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+}
+.espresso_events .ee-event-datetimes-ul {
+  margin-left: 0;
+}
+.espresso_events .tkt-slctr-tbl thead th {
+  font-size: 1.75rem;
+  font-family: "Aldrich";
+}
+.espresso_events .tkt-slctr-tbl tbody tr:nth-child(3),
+.espresso_events .tkt-slctr-tbl tbody tr:nth-child(7),
+.espresso_events .tkt-slctr-tbl tbody tr:nth-child(11),
+.espresso_events .tkt-slctr-tbl tbody tr:nth-child(15) {
+  background: #f8f8f8;
+}
+.espresso_events [class^='tckt-slctr-tbl-td'] b {
+  font-family: "jaf-facitweb";
+  font-size: 1.5rem;
+}
+.espresso_events [class^='tckt-slctr-tbl-td'] a {
+  font-family: "Monda";
+  font-size: 1.5rem;
+}
+.espresso_events .tckt-slctr-tbl-td-price,
+.espresso_events .tckt-slctr-tbl-td-qty {
+  font-family: "Monda";
+  font-size: 1.25rem;
+}
+.espresso_events .tckt-slctr-tkt-details-sctn p {
+  font-size: 1.25rem;
+}
+.espresso_events .tckt-slctr-tkt-details-tbl-wrap-dv .tckt-slctr-tkt-details-tbl {
+  border: 1px solid #001830;
+}
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -9884,7 +9940,7 @@ html.mm-opened .mm-page {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .mm-menu {
-  background: url('/usarmedsymposium/wp-content/themes/rugbymed/img/sidebarBg.png') repeat;
+  background: url('/wp-content/themes/rugbymed/img/sidebarBg.png') repeat;
   color: rgba(255, 255, 255, 0.6);
 }
 .mm-menu .mm-list > li:after {
@@ -11677,7 +11733,11 @@ object {
 ------------------------------- */
 @font-face {
   font-family: "Monda";
-  src: url(../fonts/Monda-Regular.ttf), url(../fonts/Monda-Bold.ttf);
+  src: url(../fonts/Monda-Regular.ttf);
+}
+@font-face {
+  font-family: "Monda Bold";
+  src: url(../fonts/Monda-Bold.ttf);
 }
 @font-face {
   font-family: "Fjalla One";
@@ -11710,7 +11770,7 @@ h2 {
   margin-bottom: 15px;
   display: block;
   text-transform: uppercase;
-  background: url('/usarmedsymposium/wp-content/themes/rugbymed/img/pattern-grey.gif');
+  background: url('/wp-content/themes/rugbymed/img/pattern-grey.gif');
 }
 h3 {
   font-family: "jaf-facitweb";
@@ -11724,6 +11784,11 @@ h3 {
 h4 {
   font-family: "Monda";
   font-weight: 700;
+  color: #001830;
+}
+h5 {
+  font-family: "Monda Bold";
+  font-size: 1.5rem !important;
   color: #001830;
 }
 figcaption {

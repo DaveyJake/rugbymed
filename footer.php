@@ -25,13 +25,11 @@
 		<?php wp_footer(); ?>
 
 	</div>
-	<script src="/usarmedsymposium/wp-content/themes/rugbymed/js/foundation.min.js"></script>
 	<script>
 		window.addEventListener('load', function() {
     		new FastClick(document.body);
 		}, false);
 		$(document).foundation();
 	</script>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

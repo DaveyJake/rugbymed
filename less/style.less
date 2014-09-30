@@ -20,6 +20,7 @@
 @import "specific/mobile-menu.less";
 
 /* vendor */
+@import "vendor/event-espresso.less";
 @import "vendor/font-awesome.less";
 @import "vendor/foundation.less";
 @import "vendor/jquery.mmenu.all.less";
@@ -46,7 +47,11 @@
 
 @font-face {
 	font-family: "Monda";
-	src: url(../fonts/Monda-Regular.ttf), url(../fonts/Monda-Bold.ttf);
+	src: url(../fonts/Monda-Regular.ttf);
+}
+@font-face {
+	font-family: "Monda Bold";
+	src: url(../fonts/Monda-Bold.ttf);
 }
 @font-face {
 	font-family: "Fjalla One";
@@ -63,6 +68,7 @@
 @fjalla: "Fjalla One";
 @aldrich: "Aldrich";
 @monda: "Monda";
+@mondabold: "Monda Bold";
 
 
 // assignments
@@ -95,7 +101,7 @@ h2 {
 	margin-bottom: 15px;
 	display: block;
 	text-transform: uppercase;
-	background: url('/usarmedsymposium/wp-content/themes/rugbymed/img/pattern-grey.gif');
+	background: url('/wp-content/themes/rugbymed/img/pattern-grey.gif');
 }
 h3 {
 	font-family: @jaf;
@@ -109,6 +115,11 @@ h3 {
 h4 {
 	font-family: @monda;
 	font-weight: 700;
+	color: @blue;
+}
+h5 {
+	font-family: @mondabold;
+	font-size: 1.5rem !important;
 	color: @blue;
 }
 figcaption {

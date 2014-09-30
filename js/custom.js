@@ -57,4 +57,6 @@ jQuery(document).ready(function($){
       }
   }).resize(); // This will simulate a resize to trigger the initial run.
 
+  $('.tckt-slctr-tbl-td-price').removeClass('jst-rght').addClass('jst-left');
+
 });
